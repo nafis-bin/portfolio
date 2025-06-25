@@ -163,6 +163,8 @@ input,
 button,
 textarea {
   display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 
