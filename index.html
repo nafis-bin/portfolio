@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,35 +28,105 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    
+
     <!-- custom css link for the project -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- custom js link for the project -->
     <script src="./js/script.js"></script>
-
   </head>
 
   <body>
+    <header class="topbar">
+      <a href="#" class="logo">
+        <img
+          src="./assets/images/Logo_dark.png"
+          alt="devfolio"
+          width="145"
+          height="32"
+          class="dark"
+        />
+        <img
+          src="./assets/images/Logo_light.png"
+          alt="devfolio"
+          width="145"
+          height="32"
+          class="light"
+        />
+      </a>
 
-    <p class="display-large">Typography</p>
-    <p class="display-medium">Typography</p>
-    <p class="display-small">Typography</p>
+      <button class="icon-btn theme-btn" data-theme-btn>
+        <span class="material-symbols-outlined dark" aria-hidden="true">
+          dark_mode
+        </span>
 
-    <p class="headline-large">Typography</p>
-    <p class="headline-medium">Typography</p>
-    <p class="headline-small">Typography</p>
+        <span class="material-symbols-outlined light" aria-hidden="true">
+          light_mode
+        </span>
 
-    <p class="title-large">Typography</p>
-    <p class="title-medium">Typography</p>
-    <p class="title-small">Typography</p>
+        <div class="state-layer"></div>
+      </button>
+    </header>
 
-    <p class="body-large">Typography</p>
-    <p class="body-medium">Typography</p>
-    <p class="body-small">Typography</p>
+    <main>
+      <article>
+        <section class="section hero">
+          <div class="container">
+            <figure
+              class="hero-banner img-holder"
+              style="--width: 240; --height: 240"
+            >
+              <img
+                src="./assets/images/profile.png"
+                width="240"
+                height="240"
+                alt="tokyo-ramen"
+                class="img-cover"
+              />
+            </figure>
 
-    <p class="label-large">Typography</p>
-    <p class="label-medium">Typography</p>
-    <p class="label-small">Typography</p>
+            <div class="hero-content">
+              <span class="label-large section-subtitle"
+                >Software Engineer</span
+              >
+
+              <h1 class="display-small">Tokyo Ramen</h1>
+
+              <p class="body-large section-text">
+                Lorem ipsum dolor sit amet consectetur. Quam ut feugiat ut porta
+                morbi lobortis tristique.
+              </p>
+
+              <div class="btn-wrapper">
+
+                <a href="mailto:nafisbinnizam@gmail.com" class="chip">
+
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    mail
+                  </span>
+                  
+                  <span class="label-large">nafisbinnizam@gmail.com</span>
+                
+                  <div class="state-layer"></div>
+                </a>
+
+                <a href="tel:+8801020304" class="chip">
+
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    call
+                  </span>
+                  
+                  <span class="label-large">+8801020304</span>
+                
+                  <div class="state-layer"></div>
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
