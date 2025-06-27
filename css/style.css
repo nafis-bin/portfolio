@@ -794,7 +794,7 @@ body {
 
   .about-card,
   .primary-tabs {
-    position: sticky;
+    /* position: sticky; */
     top: 64px;
   }
   .primary-tabs { z-index: 2; }
