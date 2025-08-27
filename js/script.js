@@ -54,3 +54,11 @@ $tabBtn.forEach(item => {
     
   })
 })
+
+
+let cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+  card.onclick = () => {
+    window.open(card.dataset.link, '_blank');
+  }
+})
